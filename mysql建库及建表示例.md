@@ -37,6 +37,7 @@ ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='用户表'
 ```
 
 # 建表规则
+```sql
 CREATE TABLE `table` (
 `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
 `deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '软删除标识',
@@ -50,6 +51,7 @@ PRIMARY KEY (`id`),
 KEY `idx_create_time` (`create_time`),
 KEY `idx_update_time` (`update_time`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT = '';
+```
 
 
 
