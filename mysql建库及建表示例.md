@@ -1,6 +1,6 @@
 # 建库示例
 ```sql
-CREATE DATABASE IF NOT EXISTS xxx CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci; 
+CREATE DATABASE IF NOT EXISTS xxx DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci; 
 ```
 
 COLLATE：校对规则，翻译为排序规则不准确，影响查询校对和排序，例如等号查询'='  
