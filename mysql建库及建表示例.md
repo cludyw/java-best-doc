@@ -60,6 +60,11 @@ KEY `idx_update_time` (`update_time`)
 - 临时表：xxx_tmp
 - 备份表：xxx_bak
 
+## 字段类型
+- 枚举，如性别,状态等：TINYINT
+- 金额：DECIMAL(N,M)
+- 时间：DATETIME
+- 日期：DATE
 
 ## ip地址存储
 ip地址推荐使用int类型存储，占用4个字节，比char(15)更节省空间。
