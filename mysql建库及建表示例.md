@@ -36,7 +36,20 @@ select * from tb_user where BINARY username ='user';
 ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='用户表'
 ```
 
-
+# 建表规则
+CREATE TABLE `table` (
+`id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+`deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '软删除标识',
+`create_no` varchar(32) not null default '' COMMENT '创建者工号',
+`create_name` varchar(32) not null default '' COMMENT '创建者姓名',
+`create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+`update_no` varchar(32) not null default '' COMMENT '更新者工号',
+`update_name` varchar(32) not null default '' COMMENT '更新者姓名',
+`update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+PRIMARY KEY (`id`),
+KEY `idx_create_time` (`create_time`),
+KEY `idx_update_time` (`update_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT = '';
 
 
 
