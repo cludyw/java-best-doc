@@ -36,7 +36,7 @@ select * from tb_user where BINARY username ='user';
 ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='用户表'
 ```
 
-# 建表规则
+# 建表示例
 ```sql
 CREATE TABLE `table` (
 `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
@@ -52,6 +52,13 @@ KEY `idx_create_time` (`create_time`),
 KEY `idx_update_time` (`update_time`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT = '';
 ```
+
+## 命名示例
+- 微服务：test_payment、test_order、test_user
+- 同一个库内水平分表：xxx_001、xxx_002
+- 索引：idx_xxx
+- 临时表：xxx_tmp
+- 备份表：xxx_bak
 
 
 
