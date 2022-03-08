@@ -7,7 +7,7 @@ general_ci、unicode_ci：排序规则，中英文没有差别，一般用genera
 
 ci：case insensitive，大小写不敏感，不区分大小写  
 cs：大小写敏感，区分大小写  
-bin：区分大小写，每个字符串用二进制数据编译存储，例如：utf8_bin<br>
+bin：区分大小写，每个字符串用二进制数据编译存储，例如：utf8_bin  
 
 
 
