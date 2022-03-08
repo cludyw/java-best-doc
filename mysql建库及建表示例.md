@@ -47,7 +47,7 @@ CREATE TABLE `table` (
 `update_no` varchar(32) not null default '' COMMENT '更新者工号',
 `update_name` varchar(32) not null default '' COMMENT '更新者姓名',
 `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
-PRIMARY KEY pk_id (`id`),
+PRIMARY KEY (`id`),
 KEY `idx_create_time` (`create_time`),
 KEY `idx_update_time` (`update_time`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT = '';
@@ -57,8 +57,7 @@ KEY `idx_update_time` (`update_time`)
 - 微服务：test_payment、test_order、test_user
 - 同一个库内水平分表：xxx_001、xxx_002
 - 普通索引：idx_xxx
-- 唯一索引：uq_xxx
-- 主键索引：pk_xxx
+- 唯一索引：idx_uq_xxx
 - 临时表：xxx_tmp
 - 备份表：xxx_bak
 
