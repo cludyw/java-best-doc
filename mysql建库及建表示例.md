@@ -16,7 +16,7 @@ bin：区分大小写，每个字符串用二进制数据编译存储，例如�
 
 ##  大小写敏感查询
 
-**查询where指定BiNARY**
+**查询where指定BINARY**
 ```sql
 select * from tb_user where BINARY username ='user';
 ```
