@@ -61,5 +61,15 @@ KEY `idx_update_time` (`update_time`)
 - 备份表：xxx_bak
 
 
+## ip地址存储
+ip地址推荐使用int类型存储，占用4个字节，比char(15)更节省空间。
 
-
+将ip转换为数字后存储
+```sql
+INSERT INTO user (id, ip) VALUES
+(1, inet_aton('192.168.1.1'),
+(2, inet_aton('172.16.11.66'),
+(3, inet_aton('220.117.131.12');
+```
+- inet_aton：ip转换为数字，存储和查询条件使用
+- inet_ntoa：数字转换为ip，查询结果显示使用
