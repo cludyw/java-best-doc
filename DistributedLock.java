@@ -1,13 +1,6 @@
-package com.hzins.travel.byt.starter.redis.lock;
-
 import java.lang.annotation.*;
 import java.util.concurrent.TimeUnit;
 
-/**
- * 分布式锁
- * @author hz21056680
- * @date 2021/11/12 11:38
- */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
