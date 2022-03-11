@@ -1,14 +1,3 @@
-/*
- * Copyright (c) 2006-2021 Hzins Ltd. All Rights Reserved.
- * <p>
- * This code is the confidential and proprietary information of
- * Hzins.You shall not disclose such Confidential Information
- * and shall use it only in accordance with the terms of the agreements
- * you entered into with Hzins,https://www.huize.com.
- * </p>
- */
-package com.hzins.travel.byt.starter.jdbc.config;
-
 import lombok.Data;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -18,10 +7,6 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * @author hz21056680
- * @date 2021/12/13 14:24
- */
 @ConfigurationProperties("spring.datasource")
 @Data
 public class MultipleDataSourceProperties {
