@@ -1,24 +1,9 @@
-/*
- * Copyright (c) 2006-2021 Hzins Ltd. All Rights Reserved.
- * <p>
- * This code is the confidential and proprietary information of
- * Hzins.You shall not disclose such Confidential Information
- * and shall use it only in accordance with the terms of the agreements
- * you entered into with Hzins,https://www.huize.com.
- * </p>
- */
-package com.hzins.travel.byt.starter.redis.lock;
-
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 
 import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
 
-/**
- * @author hz21056680
- * @date 2021/11/24 17:27
- */
 public class DistributedLockUtil {
     /**
      * 默认最多等待锁10秒
